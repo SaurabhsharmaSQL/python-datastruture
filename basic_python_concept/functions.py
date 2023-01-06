@@ -132,7 +132,7 @@ sortStudentName("abc7 ")'''
 #############################################################################
 #SMS
 
-def sortStudentName(firstName = "Ram", lastName = "Sharma"):
+'''def sortStudentName(firstName = "Ram", lastName = "Sharma"):
     print ("Welcome to Python " + firstName + " " + lastName )
     print (" Today is your day in colleage")
     print (" Please go to noticeboard for timetable")
@@ -142,4 +142,60 @@ sortStudentName()
 sortStudentName("Vijay", "Mishra")
 sortStudentName("Saurabh", "Sharma")
 sortStudentName("Vikcy", "Mishra")
-sortStudentName("Preeti", "Mishra")
+sortStudentName("Preeti", "Mishra")'''
+
+
+#############################################################################
+#Calling line
+
+'''def sortStudentName(firstName = "Ram", lastName = "Sharma"):
+    smsSuccessfullySent : bool = False
+
+    print ("Welcome to Python " + firstName + " " + lastName )
+    print ("Today is your day in colleage")
+    print ("Please go to noticeboard for timetable")
+    print ("-----------------------------------------------")
+
+    #smsSuccessfullySent : bool = False
+
+issent = sortStudentName()
+issent = sortStudentName("Vijay", "Mishra")
+issent = sortStudentName("Saurabh", "Sharma")
+issent = sortStudentName("Vikcy", "Mishra")
+issent = sortStudentName("Preeti", "Mishra")'''
+     
+    #smsSuccessfullySent
+
+
+####(    veryImportantFunctions  )###################################
+#####################################################################
+
+
+
+def greetStudentsBySMS(firstName = "Ram", lastName = "Sharma"):
+    smsSuccessfullySent:bool = False
+
+    print ("Welcome to Python " + firstName + " " + lastName)
+    print ("Today is your first day in our college")
+    print ("Please go to noticeboard for timetable")
+    print ("--------------------------------------")
+
+    smsSuccessfullySent = True
+
+    return(smsSuccessfullySent)
+
+isSent =greetStudentsBySMS()
+print(isSent)
+
+
+isSent = greetStudentsBySMS("Vijay", "Mishra")
+print(isSent)
+
+isSent = greetStudentsBySMS("Saurabh", "Sharma")
+print(isSent)
+
+isSent = greetStudentsBySMS("Vikcy", "Mishra")
+print(isSent)
+
+isSent = greetStudentsBySMS("Preeti", "Mishra")
+print(isSent)
