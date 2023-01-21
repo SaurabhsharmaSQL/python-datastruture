@@ -11,10 +11,22 @@ print(Sample)
 #for i in Sample:
     #print(i) 
 
-metrix = [[1,2,3],
+def loop(x):
+    for item in x:
+        if isinstance(item,list):
+            loop(item)
+        else:
+            print(item)
+loop(Sample)
+            
+
+#test = ["a","b","c",["Sam","Ram","Bam",["qw","er"]]]
+#print(list(test))                
+
+#metrix = [[1,2,3],
           [1,2,3],
           [1,2,3]]
 
-print(metrix)
-for i in metrix:
-    print(i)
+#print(metrix)
+#for i in metrix:
+    #print(i)
